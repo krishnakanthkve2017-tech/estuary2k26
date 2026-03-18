@@ -1,0 +1,28 @@
+{
+  "name": "estuary2k26",
+  "version": "1.0.0",
+  "description": "ESTUARY 2026 - The premier event for tech innovators and leaders",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krishnakanthkve2017-tech/estuary2k26.git"
+  },
+  "keywords": [
+    "estuary",
+    "conference",
+    "event",
+    "tech"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/krishnakanthkve2017-tech/estuary2k26/issues"
+  },
+  "homepage": "https://github.com/krishnakanthkve2017-tech/estuary2k26#readme",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  }
+}
