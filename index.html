@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>||Estuary26'||</title>
+    <meta name="description" content="Register for ESTUARY 2026 - The premier event for tech innovators and leaders.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">ESTUARY<span>'26</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#events">Event Details</a></li>
+                <li><a href="#photos">Photos</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="brochure.pdf" download="Estuary26'_Brochure.pdf" class="btn btn-outline"><i
+                        class="fas fa-download"></i> Brochure</a>
+                <a href="#register" class="btn btn-primary" onclick="openModal()">Register Now</a>
+            </div>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-content fade-in">
+            <div class="badge">October 15-17, 2026 • Silicon Valley</div>
+            <h1>Experience the <span class="gradient-text">Future</span> Today</h1>
+            <p>Join visionaries, creators, and disruptors for three days of immersive keynotes, workshops, and
+                networking that will reshape the tech landscape.</p>
+            <div class="hero-buttons">
+                <a href="#events" class="btn btn-primary btn-large">View Events</a>
+                <a href="#about" class="btn btn-secondary btn-large">Learn More</a>
+            </div>
+        </div>
+        <div class="hero-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container section-fade">
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2 class="section-title">About <span class="gradient-text">ESTUARY</span></h2>
+                    <p>ESTUARY 2026 is more than a conference; it's an ecosystem of innovation. We bring together the
+                        brightest minds in artificial intelligence, spatial computing, and next-gen web technologies.
+                    </p>
+                    <p>Over the course of three action-packed days, you'll gain hands-on experience with emerging tech
+                        and forge connections that will define the next decade of digital evolution.</p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <h3>50+</h3>
+                            <p>Speakers</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>30+</h3>
+                            <p>Workshops</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>5000+</h3>
+                            <p>Attendees</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="glass-card text-center">
+                        <i class="fas fa-rocket fa-4x mb-4" style="color: var(--primary);"></i>
+                        <h3 style="margin-bottom: 1rem;">Innovation Awaits</h3>
+                        <p>Be part of the revolution. Discover, learn, and grow with industry leaders.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Details Section -->
+    <section class="events" id="events">
+        <div class="container section-fade">
+            <h2 class="section-title text-center">Event <span class="gradient-text">Details</span></h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">Day 1 • Oct 15</div>
+                    <div class="timeline-content glass-card hover-glow">
+                        <h3>Opening Keynote & AI Summits</h3>
+                        <p class="time"><i class="far fa-clock"></i> 09:00 AM - 05:00 PM</p>
+                        <p>Dive deep into the realities of Artificial General Intelligence and its immediate impacts on
+                            global markets.</p>
+                        <button class="btn btn-text" onclick="openModal('Day 1 AI Summit')">Register for Session <i
+                                class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Day 2 • Oct 16</div>
+                    <div class="timeline-content glass-card hover-glow">
+                        <h3>Spatial Computing Workshops</h3>
+                        <p class="time"><i class="far fa-clock"></i> 10:00 AM - 04:00 PM</p>
+                        <p>Hands-on sessions building AR/VR applications with next-generation headsets and frameworks.
+                        </p>
+                        <button class="btn btn-text" onclick="openModal('Day 2 Workshops')">Register for Session <i
+                                class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Day 3 • Oct 17</div>
+                    <div class="timeline-content glass-card hover-glow">
+                        <h3>The Web3 Integration Demo Day</h3>
+                        <p class="time"><i class="far fa-clock"></i> 09:30 AM - 03:00 PM</p>
+                        <p>Witness live deployments of decentralized applications by top startups worldwide.</p>
+                        <button class="btn btn-text" onclick="openModal('Day 3 Demo Day')">Register for Session <i
+                                class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photos Section -->
+    <section class="photos" id="photos">
+        <div class="container section-fade">
+            <h2 class="section-title text-center">Past <span class="gradient-text">Memories</span></h2>
+            <div class="gallery">
+                <div class="gallery-item glass-card image-placeholder">
+                    <i class="fas fa-camera"></i>
+                    <span>Keynote 2025</span>
+                </div>
+                <div class="gallery-item glass-card image-placeholder">
+                    <i class="fas fa-users"></i>
+                    <span>Networking Mixer</span>
+                </div>
+                <div class="gallery-item glass-card image-placeholder">
+                    <i class="fas fa-vr-cardboard"></i>
+                    <span>VR Demo Zone</span>
+                </div>
+                <div class="gallery-item glass-card image-placeholder">
+                    <i class="fas fa-laptop-code"></i>
+                    <span>Hackathon Winners</span>
+                </div>
+                <div class="gallery-item glass-card image-placeholder wide">
+                    <i class="fas fa-microphone-alt"></i>
+                    <span>Main Stage Panel</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Register Section -->
+    <section class="contact" id="contact">
+        <div class="container section-fade">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2 class="section-title">Get in <span class="gradient-text">Touch</span></h2>
+                    <p>Have questions about the event, speaking opportunities, or sponsorships? Reach out to our team.
+                    </p>
+
+                    <div class="info-items">
+                        <div class="info-item">
+                            <div class="icon-box"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Moscone Center, San Francisco, CA</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="icon-box"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <h4>Email Us</h4>
+                                <p>hello@estuary2026.com</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="icon-box"><i class="fas fa-phone-alt"></i></div>
+                            <div>
+                                <h4>Call Us</h4>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form glass-card">
+                    <h3>Send a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="4" placeholder="How can we help?" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="logo">ESTUARY<span>'26</span></a>
+                    <p>The definitive gathering for those who build the future. Join us in shaping tomorrow.</p>
+                    <div class="social-links">
+                        <a href="#twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#linkedin"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#discord"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#events">Schedule</a></li>
+                        <li><a href="#photos">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="brochure.pdf" download="ESTUARY_2026_Brochure.pdf">Download Brochure</a></li>
+                        <li><a href="#sponsor">Sponsor Info</a></li>
+                        <li><a href="#press">Press Kit</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 ESTUARY Conference. All rights reserved.</p>
+                <div class="legal">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Registration Modal -->
+    <div class="modal-overlay" id="registrationModal">
+        <div class="modal-content glass-card">
+            <button class="close-modal" onclick="closeModal()"><i class="fas fa-times"></i></button>
+            <h2 class="mb-2" style="font-size: 2rem;">Event <span class="gradient-text">Registration</span></h2>
+            <p class="mb-4 text-muted" id="modalSubtitle">Secure your spot for ESTUARY 2026</p>
+
+            <form id="registerForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="regFirstName">First Name</label>
+                        <input type="text" id="regFirstName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="regLastName">Last Name</label>
+                        <input type="text" id="regLastName" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="regEmail">Work Email</label>
+                    <input type="email" id="regEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="regTicket">Ticket Type</label>
+                    <select id="regTicket" required>
+                        <option value="general">General Admission ($299)</option>
+                        <option value="vip">VIP Pass ($899)</option>
+                        <option value="student">Student Pass ($99)</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary w-100 mt-2">Complete Registration</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
