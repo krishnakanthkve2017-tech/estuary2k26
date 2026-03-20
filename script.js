@@ -165,7 +165,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // Countdown Timer Logic
 const countdown = () => {
-    const eventDate = new Date('October 15, 2026 09:00:00').getTime();
+    const eventDate = new Date('April 1, 2026 09:00:00').getTime();
     const now = new Date().getTime();
     const gap = eventDate - now;
 
