@@ -394,7 +394,7 @@ section {
 }
 
 .time-value {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     font-weight: 700;
     color: white;
     line-height: 1;
@@ -404,7 +404,7 @@ section {
 }
 
 .time-label {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     color: var(--text-muted);
     text-transform: uppercase;
     letter-spacing: 1px;
