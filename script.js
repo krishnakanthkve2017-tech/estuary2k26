@@ -74,6 +74,15 @@ const modalSubtitle = document.getElementById('modalSubtitle');
 window.openModal = function(sessionName = '') {
     if (sessionName) {
         modalSubtitle.textContent = `Registering for: ${sessionName}`;
+        const eventSelect = document.getElementById('regEvent');
+        if (eventSelect) {
+            for (let i = 0; i < eventSelect.options.length; i++) {
+                if (eventSelect.options[i].value === sessionName) {
+                    eventSelect.selectedIndex = i;
+                    break;
+                }
+            }
+        }
     } else {
         modalSubtitle.textContent = 'Secure your spot for ESTUARY 2026';
     }
